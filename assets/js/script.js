@@ -14,9 +14,9 @@ async function loadServers() {
 
         if (status) {
             server_info.innerHTML = `
-                <h4 class="text-white truncate">${data.map?.clean || '-'}</h4>
+                <p class="text-white text-lg truncate">${data.map?.clean || '-'}</p>
                 <p class="text-white/30 text-xs">By Alanackery</p>
-                <p class="text-white/30 text-xs">${data.hostname || '-'}</p>`
+                <p class="text-white/30 text-[0.65rem">${data.hostname || '-'}</p>`
         } else {
             server_info.innerHTML = `<h4 class="text-red-600">Can't load server information.</h4>`
         }
